@@ -1,0 +1,114 @@
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main > section{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main > section > span{
+    display: block;
+    width: 95%;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+.stars{
+    font-size: 2rem;
+}
+
+.main > img{
+    height: 80%;
+    max-height: 500px;
+    pointer-events: none;
+}
+
+/*media под ширину*/
+
+@media (max-width: 1280px){
+    .main > img{
+        height: 60%;
+        max-height: 340px;
+    }
+
+    .main > section > span{
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 1024px){
+    .main > section > span{
+        font-size: 1.3rem;
+        letter-spacing: 0.3px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px){
+    .main > img{
+        display: none;
+    }
+
+    .main{
+        background-image: url('../../../shared/assets/sea.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 380px;
+    }
+
+    .main > section{
+        width: 90%;
+    }
+
+    .main > section > span{
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 480px){
+    .main{
+        background-size: cover;
+    }
+}
+
+/*media под высоту*/
+
+@media (min-height: 1025px){
+    .main > img {
+        display: none;
+    }
+    
+    .main{
+        background-image: url('../../../shared/assets/sea.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 1200px;
+    }
+
+    .main > section{
+        width: 90%;
+    }
+
+    .main > section > span{
+        font-size: 3rem;
+        line-height: 100px;
+    }
+
+    .stars{
+        font-size: 3.5rem;
+    }
+}
