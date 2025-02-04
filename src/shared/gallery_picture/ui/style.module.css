@@ -8,3 +8,11 @@
     border: 2px solid grey;
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+    .img{
+        width: 100vw;
+        border: none;
+        border-radius: 0;
+    }
+}

@@ -1,7 +1,8 @@
 import { Header } from "@widgets/header"
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import './styles/layout.css'
 import { FC } from "react"
+import { Footer } from "@widgets/footer"
 
 const Layout: FC=()=>{
     return(
@@ -10,6 +11,7 @@ const Layout: FC=()=>{
             <main>
                 <Outlet />
             </main>
+            <Footer />
         </div>
     )
 }
