@@ -1,0 +1,34 @@
+.blockSearch,
+.blockSearch * {
+    box-sizing: border-box;
+}
+.blockSearch {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 860px;
+    border-radius: 30px;
+}
+.blockSearchInner {
+    width: 100%;
+}
+
+@media (max-width: 1260px) {
+    .blockSearchInner {
+        margin: 20px;
+        padding-right: 80px;
+    }
+}
+
+.tlContainer {
+    padding: 10px 30px;
+}
+
+.blockSearchInner .tlContainer {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 1220px;
+    margin: 20px auto;
+    border-radius: 30px;
+}
