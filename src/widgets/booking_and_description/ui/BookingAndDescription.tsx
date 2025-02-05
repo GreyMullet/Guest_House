@@ -1,4 +1,4 @@
-import { BookingButton } from "@features/booking"
+import { SearchForm } from "@features/booking"
 import { BsStars } from "react-icons/bs"
 import { useLocation } from "react-router"
 
@@ -17,7 +17,7 @@ export const BookingAndDescription=()=>{
                     много довольных гостей. большое количество отзывов
                 </span> : ''
             }
-            <BookingButton />
+            <SearchForm />
         </section>
     )
 }

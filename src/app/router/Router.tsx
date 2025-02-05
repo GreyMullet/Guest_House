@@ -2,6 +2,7 @@ import Layout from '../Layout'
 import { Main } from '@pages/main'
 import { Gallery } from '@pages/gallery'
 import { Reviews } from '@pages/reviews'
+import { Booking } from '@pages/booking'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { NotFound } from '@pages/404'
 
@@ -12,6 +13,7 @@ function Router(){
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
             <Route path='gallery' element={<Gallery />} />
+            <Route path='booking' element={<Booking />} />
             <Route path='reviews' element={<Reviews />} />
             <Route path='*' element={<NotFound />} />
           </Route>
