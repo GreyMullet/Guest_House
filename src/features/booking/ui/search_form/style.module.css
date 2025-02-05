@@ -16,6 +16,7 @@
 @media (max-width: 1260px) {
     .blockSearchInner {
         margin: 20px;
+        padding-right: 80px;
     }
 }
 
