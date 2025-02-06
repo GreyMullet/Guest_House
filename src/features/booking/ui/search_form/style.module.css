@@ -13,10 +13,16 @@
     width: 100%;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1330px) {
     .blockSearchInner {
         margin: 20px;
         padding-right: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .blockSearch {
+        margin-top: 15px;
     }
 }
 

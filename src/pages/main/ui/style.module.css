@@ -66,7 +66,10 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 380px;
+        min-height: 510px;
+        align-items: end;
+        padding-bottom: 80px;
+        box-sizing: border-box;
     }
 
     .main > section{
@@ -78,9 +81,16 @@
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 630px){
     .main{
         background-size: cover;
+    }
+}
+
+@media (max-width: 480px){
+    .main{
+        min-height: 670px;
+        padding-bottom: 50px;
     }
 }
 
