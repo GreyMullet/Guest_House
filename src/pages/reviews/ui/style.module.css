@@ -95,8 +95,9 @@
     }
 
     .reviewsContainer > section:first-child{
-        width: 100%;
-        min-height: 400px;
+        width: 90%;
+        margin-right: 15px;
+        min-height: 425px;
         border-bottom: 1px solid black;
     }
 
@@ -124,5 +125,12 @@
         border-right: none;
         border-left: none;
         margin-top: 5%;
+    }
+}
+
+@media (max-width: 480px){
+    .reviewsContainer > section:first-child{
+        margin-right: 0;
+        padding-bottom: 20px;
     }
 }
