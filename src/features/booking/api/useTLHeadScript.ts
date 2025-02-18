@@ -42,5 +42,7 @@ export const useTLHeadScript = () => {
 
     useEffect(() => {
         headScript(window);
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
     }, []);
 }
