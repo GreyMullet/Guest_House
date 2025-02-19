@@ -11,12 +11,13 @@
 }
 .blockSearchInner {
     width: 100%;
+    margin: 0 var(--scrollbar-width) 0 0;
 }
 
 @media (max-width: 1330px) {
     .blockSearchInner {
-        margin: 20px;
-        padding-right: 80px;
+        margin: 0 auto 0 20px;
+        width: calc(100% - var(--scrollbar-width) - 40px);
     }
 }
 
@@ -33,7 +34,6 @@
 .blockSearchInner .tlContainer {
     background-color: #fff;
     border: 1px solid #000;
-    width: 100%;
     max-width: 1220px;
     margin: 20px auto;
     border-radius: 30px;
